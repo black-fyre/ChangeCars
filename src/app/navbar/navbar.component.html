@@ -1,0 +1,66 @@
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-toggleable-md navbar-inverse nav_bg">
+  <button class="navbar-toggler navbar-toggler-right" type="button"
+          (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="mainNavbar"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="container">
+    <a class="navbar-brand" href="index.html">MGSBI Alumni</a>
+    <div class="collapse navbar-collapse" id="mainNavbar" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            About Us
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+            <a class="dropdown-item" href="constitution.html">Constitution</a>
+            <a class="dropdown-item" href="history.html">History of the School</a>
+            <a class="dropdown-item" href="officers.html">Principal Officers</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio2" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            Alumni
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+            <a class="dropdown-item" href="register.php">Register</a>
+            <a class="dropdown-item" href="construction.html">View by set</a>
+            <a class="dropdown-item" href="construction.html">View by name</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio3" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            News & Events
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+            <a class="dropdown-item" href="construction.html">Upcoming Events</a>
+            <a class="dropdown-item" href="construction.html">Latest News</a>
+            <a class="dropdown-item" href="construction.html">Past Events</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown" ngbDropdown>
+          <a class="nav-link dropdown-toggle"
+             href="#" id="navbarDropdown"
+             aria-haspopup="true" aria-expanded="false">
+            Mentorship & Career
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" ngbDropdownMenu>
+            <a class="dropdown-item" href="construction.html">Find a mentor</a>
+            <a class="dropdown-item" href="construction.html">Career Advice</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery/index.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
