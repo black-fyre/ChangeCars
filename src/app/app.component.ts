@@ -4,7 +4,7 @@ import {trigger, state, style, transition, animate, keyframes} from '@angular/an
 
 @Component({
   selector: 'app-root',
-  template: `<p [@newAnimation]='state' (click)="animateMe()">I will animate</p>`,
+  templateUrl: './app.component.html',
   styles: [`
     P {
       background-color: lightgray;
